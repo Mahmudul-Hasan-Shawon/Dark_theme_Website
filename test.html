@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPA Example</title>
+</head>
+<body>
+    <div id="app">
+        <h1>Welcome to My SPA</h1>
+        <p>Current Page: <span id="currentPage">Home</span></p>
+        <button onclick="loadPage('home')">Home</button>
+        <button onclick="loadPage('about')">About</button>
+        <button onclick="loadPage('contact')">Contact</button>
+    </div>
+
+    <script>
+        function loadPage(pageName) {
+            const app = document.getElementById('app');
+            const currentPageSpan = document.getElementById('currentPage');
+
+            if (pageName === 'home') {
+                app.innerHTML = `
+                    <h1>Welcome to My SPA</h1>
+                    <p>Current Page: <span id="currentPage">Home</span></p>
+                    <p>This is the home page content.</p>
+                `;
+                currentPageSpan.textContent = 'Home';
+            } else if (pageName === 'about') {
+                app.innerHTML = `
+                    <h1>About Us</h1>
+                    <p>Current Page: <span id="currentPage">About</span></p>
+                    <p>This is the about page content.</p>
+                `;
+                currentPageSpan.textContent = 'About';
+            } else if (pageName === 'contact') {
+                app.innerHTML = `
+                    <h1>Contact Us</h1>
+                    <p>Current Page: <span id="currentPage">Contact</span></p>
+                    <p>This is the contact page content.</p>
+                `;
+                currentPageSpan.textContent = 'Contact';
+            }
+        }
+    </script>
+</body>
+</html>
