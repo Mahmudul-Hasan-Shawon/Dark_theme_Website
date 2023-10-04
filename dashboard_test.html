@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Dashboard_test</title>
 
   <!-- dashboard -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -35,6 +35,7 @@
 
   <!-- Chart cdn -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js"></script>
+
 </head>
 
 <body id="body-pd" class="bg">
@@ -89,57 +90,79 @@
 
   <!-- Main Content Container -->
   <div id="main-content" class="container">
-    <!-- JavaScript will populate this content -->
+    <h2>Welcome to the Dashboard</h2>
+    <p>This is the default content that appears when the dashboard is loaded.</p>
   </div>
 
-  <!-- JavaScript for Dynamic Content Loading and Storage -->
+  <!-- JavaScript for Dynamic Content Loading -->
   <script>
     // Function to load content based on the selected link
     function loadContent(link) {
       var contentDiv = document.getElementById('main-content');
 
-      // Check if the content is stored in localStorage
-      var storedContent = localStorage.getItem(link);
-
-      if (storedContent) {
-        contentDiv.innerHTML = storedContent;
-      } else {
-        // Content not found in localStorage, load default content
-        switch (link) {
-          case 'dashboard':
-            contentDiv.innerHTML = `
-              <h2>Dashboard Content</h2>
-              <p>This is the dashboard content.</p>
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Dashboard Card</h5>
-                  <p class="card-text">This is a card inside the dashboard content.</p>
-                </div>
+      // Check which link was clicked and load content accordingly
+      switch (link) {
+        case 'dashboard':
+          contentDiv.innerHTML = `
+            <h2>Dashboard Content</h2>
+            <p>This is the dashboard content.</p>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Dashboard Card</h5>
+                <p class="card-text">This is a card inside the dashboard content.</p>
               </div>
-            `;
-            break;
-          // ... (your other cases) ...
-
-          default:
-            contentDiv.innerHTML = `
-              <h2>Welcome to the Dashboard</h2>
-              <p>This is the default content that appears when the dashboard is loaded.</p>
-            `;
-        }
+            </div>
+          `;
+          break;
+        case 'users':
+          contentDiv.innerHTML = `
+            <h2>Users Content</h2>
+            <p>This is the users content.</p>
+          `;
+          break;
+        case 'messages':
+          contentDiv.innerHTML = `
+            <h2>Messages Content</h2>
+            <p>This is the messages content.</p>
+          `;
+          break;
+        case 'bookmark':
+          contentDiv.innerHTML = `
+            <h2>Bookmark Content</h2>
+            <p>This is the bookmark content.</p>
+          `;
+          break;
+        case 'files':
+          contentDiv.innerHTML = `
+            <h2>Files Content</h2>
+            <p>This is the files content.</p>
+          `;
+          break;
+        case 'stats':
+          contentDiv.innerHTML = `
+            <h2>Stats Content</h2>
+            <p>This is the stats content.</p>
+          `;
+          break;
+        case 'signout':
+          contentDiv.innerHTML = `
+            <h2>Sign Out Content</h2>
+            <p>This is the sign out content.</p>
+          `;
+          break;
+        default:
+          contentDiv.innerHTML = `
+            <h2>Welcome to the Dashboard</h2>
+            <p>This is the default content that appears when the dashboard is loaded.</p>
+          `;
       }
-
-      // Store the content in localStorage
-      localStorage.setItem('currentContent', contentDiv.innerHTML);
-    }
-
-    // Initial content loading (on page load)
-    var initialContent = localStorage.getItem('currentContent');
-    if (initialContent) {
-      document.getElementById('main-content').innerHTML = initialContent;
-    } else {
-      loadContent('dashboard'); // Load default content if no stored content is found
     }
   </script>
+
+  <!-- Add your JavaScript and jQuery links here -->
+  <!-- Placeholder links, replace with your actual links -->
+  <!-- <script src="your-js-file.js"></script>
+  <link rel="stylesheet" href="your-css-file.css"> -->
 </body>
 
 </html>
