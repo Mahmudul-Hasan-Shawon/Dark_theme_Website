@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title> Shan</title>
+  <link rel="stylesheet" href="nav_new.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- dashboard -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- dash_2  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+
+
+</head>
+
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class='bx bxl-c-plus-plus icon'></i>
+      <div class="logo_name">CodingLab</div>
+      <i class='bx bx-menu' id="btn"></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+        <i class='bx bx-search'></i>
+        <input type="text" placeholder="Search...">
+        <span class="tooltip">Search</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name">Dashboard</span>
+        </a>
+        <span class="tooltip">Dashboard</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-user'></i>
+          <span class="links_name">User</span>
+        </a>
+        <span class="tooltip">User</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-chat'></i>
+          <span class="links_name">Messages</span>
+        </a>
+        <span class="tooltip">Messages</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-pie-chart-alt-2'></i>
+          <span class="links_name">Analytics</span>
+        </a>
+        <span class="tooltip">Analytics</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-folder'></i>
+          <span class="links_name">File Manager</span>
+        </a>
+        <span class="tooltip">Files</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-cart-alt'></i>
+          <span class="links_name">Order</span>
+        </a>
+        <span class="tooltip">Order</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-heart'></i>
+          <span class="links_name">Saved</span>
+        </a>
+        <span class="tooltip">Saved</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-cog'></i>
+          <span class="links_name">Setting</span>
+        </a>
+        <span class="tooltip">Setting</span>
+      </li>
+      <li class="profile">
+        <div class="profile-details">
+          <img src="./images/profile.png" alt="profileImg">
+          <div class="name_job">
+            <div class="name">Shawon</div>
+            <div class="job">Web designer</div>
+          </div>
+        </div>
+        <i class='bx bx-log-out' id="log_out"></i>
+      </li>
+    </ul>
+  </div>
+
+
+  <section class="home-section bg-black">
+    <div class="text text-white">
+      <div id="dashboard-content">
+        <h1>Welcome to the Dashboard</h1>
+        <p>This is the dashboard content.</p>
+        <!-- row 1 -->
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-sm-12 pt-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Row - 1</h5>
+                  <p class="card-text">Content</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-6 col-sm-12 pt-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Row - 1</h5>
+                  <p class="card-text">Content</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-6 pt-4 col-sm-12 pt-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Row - 1</h5>
+                  <p class="card-text">Content</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 pt-4 col-sm-12 pb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Row - 1</h5>
+                  <p class="card-text">Content</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- row 2 -->
+          <div class="row pt-4">
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Row - 2</h5>
+                  <p class="card-text">Content</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Row - 2</h5>
+                  <p class="card-text">Content</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Row - 2</h5>
+                  <p class="card-text">Content</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Row - 2</h5>
+                  <p class="card-text">Content</p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          
+        </div>
+      </div>
+
+      <div id="user-content">
+        <h1>User</h1>
+        <p>This is the user content.</p>
+        
+      </div>
+
+      <div id="messages-content">
+        <h1>Messages</h1>
+        <p>This is the messages content.</p>
+      </div>
+
+      <div id="analytics-content">
+        <h1>Analytics</h1>
+        <p>This is the Analytics content.</p>
+      </div>
+
+      <div id="files-content">
+        <h1>Files</h1>
+        <p>This is the Files content.</p>
+      </div>
+
+      <div id="order-content">
+        <h1>Order</h1>
+        <p>This is the Order content.</p>
+      </div>
+
+      <div id="saved-content">
+        <h1>Saved</h1>
+        <p>This is the Saved content.</p>
+      </div>
+
+      <div id="setting-content">
+        <h1>setting</h1>
+        <p>This is the setting content.</p>
+      </div>
+
+
+      <!-- Add content containers for other sections similarly -->
+    </div>
+  </section>
+
+
+
+
+  
+  <script>
+    const contentIds = [
+    "dashboard-content",
+    "user-content",
+    "messages-content",
+    "analytics-content",
+    "files-content",
+    "order-content",
+    "saved-content",
+    "setting-content"
+  ];
+
+  function updateContent(contentId) {
+    contentIds.forEach((id) => {
+      const element = document.getElementById(id);
+      element.style.display = id === contentId ? "block" : "none";
+    });
+  }
+  
+  const links = document.querySelectorAll('.nav-list li a');
+  links.forEach((link, index) => {
+    link.addEventListener('click', (event) => {
+      event.preventDefault(); // Prevent the default link behavior
+      updateContent(contentIds[index]);
+    });
+  });
+  
+  // Show the dashboard content by default (optional)
+  updateContent("dashboard-content");
+
+
+
+
+    // Add click event listeners to all sidebar links and animation
+    document.querySelectorAll(".nav-list li a").forEach(link => {
+      link.addEventListener("click", () => {
+        const linkText = link.querySelector(".links_name").textContent;
+        homeText.textContent = sidebarTextMap[linkText];
+      });
+    });
+    let sidebar = document.querySelector(".sidebar");
+    let closeBtn = document.querySelector("#btn");
+    let searchBtn = document.querySelector(".bx-search");
+    closeBtn.addEventListener("click", () => {
+      sidebar.classList.toggle("open");
+      menuBtnChange(); //calling the function(optional)
+    });
+
+
+
+    searchBtn.addEventListener("click", () => { // Sidebar open when you click on the search iocn
+      sidebar.classList.toggle("open");
+      menuBtnChange(); //calling the function(optional)
+    });
+    // following are the code to change sidebar button(optional)
+    function menuBtnChange() {
+      if (sidebar.classList.contains("open")) {
+        closeBtn.classList.replace("bx-menu", "bx-menu-alt-right"); //replacing the iocns class
+      } else {
+        closeBtn.classList.replace("bx-menu-alt-right", "bx-menu"); //replacing the iocns class
+      }
+    }
+  </script>
+
+</body>
+
+<style>
+  .col-sm-12{
+ 
+    color: aliceblue;
+    .card-text{
+      background-color: rgb(223, 239, 255);
+      color: rgb(0, 0, 0);
+      font-size: 15px;
+    }
+  }
+</style>
+
+</html>
